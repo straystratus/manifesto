@@ -1,5 +1,5 @@
 export async function getBuySellCounts(wallet, mint) {
-  const url = `https://api.helius.xyz/v0/addresses/${wallet}/transactions?api-key=6d36f6d7-558b-4e67-8b76-a0e8881d604c&limit=200`;
+  const url = `https://api.helius.xyz/v0/addresses/${wallet}/transactions?api-key=YOUR_API_KEYd604c&limit=200`;
 
   try {
     const res = await fetch(url);

@@ -1,1 +1,1 @@
-console.log("🔍 Popup active. L'extension est bien en marche.");
+console.log("the extension is working");
