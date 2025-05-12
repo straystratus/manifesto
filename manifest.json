@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Photon Wallet Tracker",
+  "version": "1.0",
+  "description": "Shows how many times wallets bought/sold a coin on Photon.",
+  "permissions": ["scripting", "storage", "activeTab"],
+  "host_permissions": [
+    "https://photon-sol.tinyastro.io/*",
+    "https://api.helius.xyz/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "assets/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://photon-sol.tinyastro.io/*"],
+      "js": ["content.js"],
+      "css": ["styles/badge.css"]
+    }
+  ]
+}
